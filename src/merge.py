@@ -14,10 +14,10 @@ def merge(x: list[int],y: list[int]) -> list[int]:
     z = []  # a new list to copy elements into
     # FIXME: fill out the loop so you merge the lists
     # until one of them is empty
-    print("len(x) = ", len(x), " | ", "len(y) = ", len(y))
+    #print("len(x) = ", len(x), " | ", "len(y) = ", len(y))
     while i < len(x) or j < len(y):
-      print("i = ", i, " | ", "j = ", j)
-      if j >= len(y) or x[i] <= y[j]:
+      #print("i = ", i, " | ", "j = ", j)
+      if i < len(x) and (j >= len(y) or x[i] <= y[j]):
         z.append(x[i])
         i += 1
       else:
@@ -32,7 +32,7 @@ def merge(x: list[int],y: list[int]) -> list[int]:
     # remainder of the other into z.
     return z
 
-x=[1,2,5,6]
-y=[1,3,4,5]
+x=[1, 2, 4, 6]
+y=[1, 3, 4, 5]
 print(merge(x,y))
 
