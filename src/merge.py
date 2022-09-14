@@ -16,10 +16,10 @@ def merge(x: list[int],y: list[int]) -> list[int]:
     # until one of them is empty
     while i < len(x) and j < len(y):
       if x[i] <= y[j]:
-        z.append[x(i)]
+        z.append(x[i])
         i += 1
       else:
-        z.append[y(j)]
+        z.append(y[j])
         j += 1
       break
     # FIXME: you shouldn't just break here
@@ -29,3 +29,4 @@ def merge(x: list[int],y: list[int]) -> list[int]:
 
 
 merge([1,2,4,6], [1,3,4,5])
+
